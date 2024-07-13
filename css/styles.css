@@ -1,13 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: whitesmoke; 
+  overflow-x: hidden;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+footer {
+  border: box;
+  display: flex;
+  justify-content: center;
+}
+footer i {
+  font-size: 2.2rem;
+  hover-transform: scale 2, 2;
 }
 
-a:hover {
-    background-color: blueviolet;
-    font-size: 150%;
-}
+/*# sourceMappingURL=styles.css.map */
