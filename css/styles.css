@@ -8,6 +8,18 @@ body {
   overflow-x: hidden;
 }
 
+section h2 {
+  text-align: center;
+}
+section div {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+section div img {
+  max-width: 100%;
+}
+
 footer {
   border: box;
   display: flex;
