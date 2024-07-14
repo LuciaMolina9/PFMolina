@@ -15,7 +15,9 @@ footer {
 }
 footer i {
   font-size: 2.2rem;
-  hover-transform: scale 2, 2;
+}
+footer i hover {
+  transform: scale 2, 2;
 }
 
 /*# sourceMappingURL=styles.css.map */
