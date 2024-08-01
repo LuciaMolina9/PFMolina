@@ -13,11 +13,6 @@ a {
   color: white;
 }
 
-iframe {
-  display: flex;
-  text-align: center;
-}
-
 .icono-yt {
   color: #FF0000;
 }
@@ -34,6 +29,29 @@ iframe {
   color: #C13584;
 }
 
+.barra {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  float: left;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: red;
+  padding: 15px;
+}
+
+.navegador {
+  width: 25%;
+  height: 40px;
+  text-align: center;
+}
+
+main {
+  background-color: yellow;
+  padding: 30px;
+  margin-top: 30px;
+}
+
 footer {
   border: box;
   display: flex;
@@ -48,6 +66,31 @@ footer i:hover {
   transform: scale(2, 2);
 }
 
+.fa-compact-disc {
+  animation-name: girar;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*.wwry
+ *  animation-name: wwry
+ *  animation-duration: 1200ms
+ *  animation-iteration-count: infinite
+ *  animation-timing-function: linear */
+/*@keyframes wwry
+ *  0%
+ *      transform: scale(1.5, 1.5)
+ *  100%
+ *      transform: scale(1, 1)                 */
 .titulo1 {
   grid-area: t1;
 }
@@ -115,8 +158,6 @@ footer i:hover {
 .foto3 {
   grid-area: fo3;
   display: flex;
-  height: 500px;
-  max-width: auto;
   justify-content: center;
 }
 
@@ -144,6 +185,11 @@ footer i:hover {
   justify-content: center;
 }
 
+img {
+  max-width: 100%;
+  height: max-content;
+}
+
 .grid-container {
   text-align: center;
 }
@@ -153,6 +199,16 @@ footer i:hover {
     grid-template-columns: 1fr 1fr;
     text-align: center;
     grid-template-areas: "t1 t1" "par1 fo1" "t2 t2" "fo2 par2" "par3 fo3" "par4 par4" "t3 t3" "fo5 par5" "par6 fo6" "fo7 par7" "par8 par8" "t4 t4" "par9 par9";
+    justify-content: space-around;
+  }
+  .grid-container div {
+    box-sizing: border-box;
+    display: flex;
+  }
+  .grid-container div img {
+    min-width: 75%;
+    max-width: 100%;
+    height: fit-content;
   }
 }
 
