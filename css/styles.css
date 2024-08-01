@@ -45,12 +45,12 @@ a {
 
 .navegador {
   width: 25%;
-  height: 40px;
+  height: 30px;
   text-align: center;
 }
 
 main {
-  background-color: yellow;
+  background-color: #fcfbfb;
   padding: 30px;
   margin-top: 30px;
 }
@@ -58,7 +58,8 @@ main {
 footer {
   border: box;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  float: left;
 }
 footer i {
   font-size: 2.2rem;
@@ -74,6 +75,15 @@ footer i:hover {
   animation-duration: 500ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  font-size: 5rem;
+}
+
+.frase {
+  animation-name: marquesina;
+  animation-duration: 8000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @keyframes girar {
@@ -84,16 +94,14 @@ footer i:hover {
     transform: rotate(360deg);
   }
 }
-/*.wwry
- *  animation-name: wwry
- *  animation-duration: 1200ms
- *  animation-iteration-count: infinite
- *  animation-timing-function: linear */
-/*@keyframes wwry
- *  0%
- *      transform: scale(1.5, 1.5)
- *  100%
- *      transform: scale(1, 1)                 */
+@keyframes marquesina {
+  0% {
+    transform: translateX(100);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .titulo1 {
   grid-area: t1;
 }

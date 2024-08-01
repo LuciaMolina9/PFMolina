@@ -1,8 +1,8 @@
 footer
     border: box
     display: flex
-    justify-content: center
-    
+    justify-content: space-around
+    float: left  
     i
         font-size: 2.2rem
         padding: 1rem
@@ -15,6 +15,14 @@ footer
     animation-duration: 500ms
     animation-iteration-count: infinite
     animation-timing-function: linear
+    font-size: 5rem
+
+.frase
+    animation-name: marquesina
+    animation-duration: 8000ms
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
 @keyframes girar
     0%
@@ -22,14 +30,9 @@ footer
     100%
         transform: rotate(360deg)
 
-/*.wwry
-    animation-name: wwry
-    animation-duration: 1200ms
-    animation-iteration-count: infinite
-    animation-timing-function: linear
-
-/*@keyframes wwry
+@keyframes marquesina
     0%
-        transform: scale(1.5, 1.5)
+        transform: translateX(100)
     100%
-        transform: scale(1, 1)                
+        transform: translateX(-100%)
+
