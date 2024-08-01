@@ -10,7 +10,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: blue;
 }
 
 .icono-yt {
@@ -38,6 +38,9 @@ a {
   justify-content: space-evenly;
   background-color: red;
   padding: 15px;
+}
+.barra a {
+  color: white;
 }
 
 .navegador {
