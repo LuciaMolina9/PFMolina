@@ -2,7 +2,7 @@
 ## Proyecto final del curso "Desarrollo web", de Coderhouse
 
 ### Introducción
-La presente página se desarrolló como parte del curso de desarrollo web. La idea era crear un página  a modo de club de fans de la banda, como introducción a otros canalaes de contacto, a la vez de poner en práctica lo aprendido. 
+La presente página se desarrolló como parte del curso de desarrollo web. La idea era crear un página  a modo de club de fans de la banda, como introducción a otros canales de contacto, mientras se puso en práctica lo aprendido. 
 
 ### Tecnologias aplicadas
 * Html
