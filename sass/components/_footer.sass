@@ -18,11 +18,13 @@ footer
     font-size: 5rem
 
 .frase
-    animation-name: marquesina
-    animation-duration: 8000ms
-    animation-iteration-count: infinite
-    animation-timing-function: linear
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    @media (min-width: 576px)     
+        animation-name: marquesina
+        animation-duration: 8000ms
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        overflow: hidden
 
 @keyframes girar
     0%
@@ -32,7 +34,7 @@ footer
 
 @keyframes marquesina
     0%
-        transform: translateX(100)
+        transform: translateX(150%)
     100%
-        transform: translateX(-100%)
+        transform: translateX(-50%)
 
